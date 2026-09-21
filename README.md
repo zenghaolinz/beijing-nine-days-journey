@@ -21,4 +21,6 @@
 
 “酒店价格地图”支持六家酒店的参考价、片区与预算筛选、自填报价及官网实时查询入口。自填报价与入住、退房日期绑定，保存于当前浏览器；不会上传到服务器，也不跨设备同步。参考价格来自2026-09-20核对的公开网页/搜索快照，各自适用日期、房型和税费条件见酒店卡片，不能视为实时报价。
 
-地图使用 OpenStreetMap 公共底图，须联网加载；底图失败时酒店列表和报价仍可用。Leaflet 1.9.4 随页面本地提供，许可见 vendor/leaflet-LICENSE.txt。
+地图改用随网页发布的北京 PMTiles 单文件底图，通过 MapLibre GL JS 按需读取同源字节范围，不再请求 OpenStreetMap 在线瓦片。离线包覆盖北京城区、海淀、卢沟桥与八达岭一带，最高缩放级别 13，数据日期为 2026-09-20；为控制体积，地图不含文字标注，地点名称由网页自己的酒店卡片和行程点位提供。
+
+MapLibre GL JS 与 PMTiles 的许可分别见 `vendor/maplibre-LICENSE.txt` 和 `vendor/pmtiles-LICENSE.txt`，底图数据署名为 OpenStreetMap contributors 与 Protomaps。
