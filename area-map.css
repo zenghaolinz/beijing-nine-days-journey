@@ -1,0 +1,42 @@
+.area-location-section{margin:22px 0 28px}
+.area-location-heading{margin-bottom:13px}
+.area-location-heading h3{font-size:22px;margin:5px 0 6px;color:#332f2a}
+.area-location-heading p{color:#6b6257;line-height:1.6;font-size:13px;margin:0}
+.area-location-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(235px,.8fr);gap:15px;align-items:stretch}
+.area-location-graphic{min-width:0;border-radius:20px;overflow:hidden}
+.area-location-svg{display:block;width:100%;height:auto;background:#f8f4eb}
+.area-map-paper{fill:#f8f4eb;stroke:#ded3c3;stroke-width:2}
+.area-map-grid{fill:none;stroke:#e9e2d6;stroke-width:1;stroke-dasharray:3 8}
+.area-map-watermark{font:600 34px sans-serif;fill:#e5dccd;letter-spacing:.13em}
+.area-map-compass path{fill:none;stroke:#775f4e;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.area-map-compass text{font:700 14px sans-serif;fill:#775f4e}
+.area-map-zone{--zone:#ae674c;cursor:pointer;transition:opacity .16s}
+.area-map-zone[data-map-area="northwest"]{--zone:#56778c}
+.area-map-zone[data-map-area="hutong"]{--zone:#8c7651}
+.area-map-zone[data-map-area="central"]{--zone:#a75348}
+.area-map-zone[data-map-area="east"]{--zone:#6b749b}
+.area-map-zone[data-map-area="south"]{--zone:#648475}
+.area-map-zone.is-muted{opacity:.35}
+.area-map-corridor{fill:none;stroke:var(--zone);stroke-width:34;stroke-linecap:round;stroke-linejoin:round;opacity:.25}
+.area-map-halo{fill:var(--zone);opacity:.12}
+.area-map-pill{fill:#fffdf8;stroke:var(--zone);stroke-width:2.3;filter:drop-shadow(0 2px 3px #3d302124)}
+.area-map-zone:hover .area-map-pill,.area-map-zone:focus .area-map-pill{stroke-width:4;fill:#fff9ef}
+.area-map-zone:focus{outline:none}
+.area-map-zone.is-selected .area-map-pill{fill:var(--zone);stroke:#fffdf8;stroke-width:3}
+.area-map-name{font:700 17px sans-serif;fill:#302f2b;pointer-events:none}
+.area-map-sub{font:600 14px sans-serif;fill:#655a4e;pointer-events:none}
+.area-map-zone.is-selected .area-map-name,.area-map-zone.is-selected .area-map-sub{fill:white}
+.area-map-landmark{pointer-events:none}
+.area-map-landmark circle{fill:#405c52;stroke:#f8f4eb;stroke-width:2}
+.area-map-landmark text{font:600 13px sans-serif;fill:#425a50;paint-order:stroke;stroke:#f8f4eb;stroke-width:3}
+.area-map-foot{font:12px sans-serif;fill:#746e64}
+.area-location-note{border:1px solid #e3d7c7;border-radius:18px;background:#fffaf2;padding:22px;min-width:0}
+.area-location-note-inner{display:flex;flex-direction:column;gap:10px;height:100%}
+.area-location-note h3{font-size:20px;line-height:1.35;margin:0;color:#342e27}
+.area-location-note p{font-size:13px;line-height:1.7;color:#62594f;margin:0}
+.area-location-note ul{padding-left:20px;margin:5px 0 0;color:#62594f;font-size:13px;line-height:1.85}
+.area-location-note .area-location-fit{background:#f1e9dc;border-radius:10px;padding:10px 12px;color:#5a4d3b}
+.area-location-note .area-location-caution{font-size:12px;color:#7b6a5c}
+.area-location-note button{align-self:flex-start;margin-top:auto}
+@media(max-width:800px){.area-location-layout{grid-template-columns:1fr}.area-location-note{padding:17px}.area-location-note-inner{gap:7px}.area-location-note ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8px}}
+@media(max-width:520px){.area-location-graphic{overflow-x:auto}.area-location-svg{width:600px;max-width:none}.area-location-heading:after{content:'图可左右滑动';display:block;font-size:11px;color:#88796a;margin-top:5px}.area-location-note ul{grid-template-columns:1fr}}

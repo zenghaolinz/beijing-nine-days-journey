@@ -1,11 +1,11 @@
 /* Curated accommodation examples. Reference prices are snapshots, never live inventory. */
 window.BeijingStays={
   areas:[
-    {id:'central',name:'东四 / 王府井 / 东单',short:'老城核心',fit:'故宫、天安门、雍和宫几天衔接方便',tradeoff:'房价通常偏高，部分胡同内需要步行到地铁。'},
-    {id:'hutong',name:'鼓楼 / 南锣 / 雍和宫',short:'胡同生活',fit:'什刹海、地坛、国子监与南锣鼓巷',tradeoff:'覆盖数个街区；夜间噪声、楼梯和行李通行要逐店核实。'},
-    {id:'east',name:'东直门 / 国贸',short:'东部商圈',fit:'机场进出和第八天国贸夜景',tradeoff:'东直门到国贸并不近；去海淀园林与清河站要早出发。'},
-    {id:'south',name:'前门 / 天坛 / 南城',short:'南城烟火',fit:'前门美食、天坛周边和北京南站',tradeoff:'样本包含右安门一带，距离前门较远，需逐店核对交通。'},
-    {id:'northwest',name:'五道口 / 上地 / 清河',short:'园林高校',fit:'颐和园、圆明园、清北及清河站长城车',tradeoff:'去故宫与南锣等老城景点，通勤明显更长。'}
+    {id:'central',name:'东四 / 王府井 / 东单',short:'老城核心',where:'在故宫以东、天安门东北方向，处于北京老城的东侧。东四、王府井和东单沿南北方向分布，并非同一个地铁站。',fit:'故宫、天安门、雍和宫几天衔接方便',tradeoff:'房价通常偏高，部分胡同内需要步行到地铁。'},
+    {id:'hutong',name:'鼓楼 / 南锣 / 雍和宫',short:'胡同生活',where:'在故宫以北，片区从西边的新街口、鼓楼延伸到南锣鼓巷和更东边的雍和宫。',fit:'什刹海、地坛、国子监与南锣鼓巷',tradeoff:'覆盖数个街区；夜间噪声、楼梯和行李通行要逐店核实。'},
+    {id:'east',name:'东直门 / 国贸',short:'东部商圈',where:'在老城以东；东直门偏北，国贸在更东南的 CBD。两处相隔数公里，选房时需要看具体地址。',fit:'机场进出和第八天国贸夜景',tradeoff:'东直门到国贸并不近；去海淀园林与清河站要早出发。'},
+    {id:'south',name:'前门 / 天坛 / 南城',short:'南城烟火',where:'在天安门广场以南。前门靠近老城中轴线，天坛再往东南，部分样本还延伸到更南的右安门。',fit:'前门美食、天坛周边和北京南站',tradeoff:'样本包含右安门一带，距离前门较远，需逐店核对交通。'},
+    {id:'northwest',name:'五道口 / 上地 / 清河',short:'园林高校',where:'在故宫西北方向，靠近高校与皇家园林；从五道口继续往北是上地和清河站。',fit:'颐和园、圆明园、清北及清河站长城车',tradeoff:'去故宫与南锣等老城景点，通勤明显更长。'}
   ],
   extra:[
     {id:'station',name:'北平北京站青年旅舍',kind:'hostel',area:'central',district:'东单 / 北京站',level:'青旅床位',address:'东城区八宝楼胡同12号',transport:'临近东单片区；以房源页面确认入口。',why:'适合独行和想控制住宿预算的人，往老城景点交通方便。',url:'https://www.hostelworld.com/hostels/p/92632/peking-station-hostel/'},
