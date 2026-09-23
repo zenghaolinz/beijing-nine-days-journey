@@ -38,7 +38,7 @@ original:{name:'全景紧凑',tag:'体力好',summary:'第五天颐和园＋圆�
 balanced:{name:'均衡分区',tag:'推荐',summary:'第五天颐和园＋北大，第六天圆明园＋清华；每天一园一校，转场更短。',days:'D5 颐和园＋北大 · D6 圆明园＋清华'},
 relaxed:{name:'省腿慢游',tag:'更轻松',summary:'第五天只去颐和园，第六天圆明园后按预约选一所校园，不强行走完。',days:'D5 颐和园 · D6 圆明园＋一所校园'}
 };
-$('.controls').insertAdjacentHTML('afterend',`<section class="route-profiles" id="route-profiles" aria-labelledby="route-profiles-title"><div class="route-profiles-head"><div><div class="eyebrow">THREE WAYS TO TRAVEL</div><h2 id="route-profiles-title">选一条适合体力和预约的路线。</h2></div><p>故宫遇周一会自动与景山日对调；已填写的预约时间始终优先。</p></div><div class="route-profile-grid" id="route-profile-grid" role="radiogroup" aria-label="九日路线方案"></div></section>`);
+$('.controls').insertAdjacentHTML('afterend',`<section class="route-profiles" id="route-profiles" aria-labelledby="route-profiles-title"><div class="route-profiles-head"><div><div class="eyebrow">THREE WAYS TO TRAVEL</div><h2 id="route-profiles-title">选一条适合体力和预约的路线。</h2></div><p>录入预约后，自动排程会固定入场时间；尚未约到的校园先列为备选。</p></div><div class="route-profile-grid" id="route-profile-grid" role="radiogroup" aria-label="九日路线方案"></div></section>`);
 function updateRouteProfileSelection(){$('#route-profile-grid').innerHTML=Object.entries(routeProfiles).map(([id,p])=>`<button class="route-profile ${state.pace===id?'selected':''}" data-route-profile="${id}" role="radio" aria-checked="${state.pace===id}"><span class="route-profile-top"><strong>${p.name}</strong><b>${p.tag}</b></span><span>${p.summary}</span><small>${p.days}</small></button>`).join('');}
 updateRouteProfileSelection();
 function getDay(index){return window.BeijingFeatures?.day(index)||getOriginalDay(index)}
